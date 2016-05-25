@@ -1,4 +1,4 @@
-$(document).ready(function(e) {
+$(document).ready(function (e){
     $('#principal').height($('#page1').height());
 	 document.addEventListener("deviceready",function(){
 		 audio=window .plugins .lowLatencyAudio;
@@ -10,12 +10,12 @@ $(document).ready(function(e) {
 	 audio=preloadFX('la','audio/LA.mp3',function(){},function(e){alert('Error'+e);});
 	 audio=preloadFX('si','audio/SI.mp3',function(){},function(e){alert('Error'+e);});
 	 
-	 $('nota').bind('touchstart',function(){
+	 $('.nota').bind('touchstart',function(){
 	 $(this).addClass('tocada');
 	 audio.play($(this).attr('id'));
 	 
 	 }).bind('touchend',function(){
-		  $(this).addClass('tocada');
+		  $(this).removeClass('tocada');
 	 });
 	 },false);	 
 });
