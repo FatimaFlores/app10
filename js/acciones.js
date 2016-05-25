@@ -1,7 +1,7 @@
 $(document).ready(function (e){
     $('#principal').height($('#page1').height());
 	 document.addEventListener("deviceready",function(){
-		 audio=window .plugins .lowLatencyAudio;
+		 audio=window.plugins.lowLatencyAudio;
 	 audio=preloadFX('do','audio/DO.mp3',function(){},function(e){alert('Error'+e);});
 	 audio=preloadFX('re','audio/RE.mp3',function(){},function(e){alert('Error'+e);});
 	 audio=preloadFX('mi','audio/MI.mp3',function(){},function(e){alert('Error'+e);});
